@@ -50,4 +50,4 @@ Teremos essencialmente 3 camadas: _domínio_, _aplicação(ou data)_ e _infraest
 ![diagrama er](./docs/Diagrama%20ER.png)
 
 ## Diagrama de casos de uso
-![diagrama de caso de uso](./docs/Casos de uso.png)
+![diagrama de caso de uso](./docs/Casos%20de%20uso.png)
