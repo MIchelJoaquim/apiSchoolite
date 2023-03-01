@@ -6,7 +6,7 @@ export interface ICreateTeacher {
         nome:Name,
         nascimento:Date, 
         genero:IGenre,
-        nivel_academico:Nivel,
-        area_de_formacao:string
-    }) => Promise <void>;
+        nivelAcademico:Nivel,
+        areaFormacao:string
+    }) => Promise<void>;
 }

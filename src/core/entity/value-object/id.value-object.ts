@@ -4,7 +4,7 @@ export class Id {
     private constructor(parameters: { value: string | number}) {
         this._value = parameters.value
     } 
-
+    
     static create(parameters: {value: string | number}): Id {
         if(typeof parameters.value === 'number' && parameters.value < 0) 
             throw new Error("O id não deve ser negativo");

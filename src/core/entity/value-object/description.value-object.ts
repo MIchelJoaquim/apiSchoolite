@@ -6,8 +6,9 @@ export class Description {
     }
 
     static create(parameters: {value: string}): Description{ 
-        const qtdWords = parameters.value.split(' ').length
-        if(qtdWords < 3) 
+        const qtdWords = parameters.value.split(' ').length;
+        const words = 3;
+        if(qtdWords < words) 
             throw new Error("A descrição deve ter pelo menos 3 palavras");
          
         return new Description(parameters);

@@ -12,17 +12,17 @@ export class Teacher {
     private _nome: Name;
     private _nascimento:Date;
     private _genero: IGenre;
-    private _nivel_academico: Nivel;
-    private _area_de_formacao: string;
+    private _nivelAcademico: Nivel;
+    private _areaDeFormacao: string;
 
 
-    private constructor(parameters:{id:Id , nome:Name,nascimento:Date,genero:IGenre,nivel_academico:Nivel, area_de_formacao:string}){
+    private constructor(parameters:{id:Id , nome:Name,nascimento:Date,genero:IGenre,nivelAcademico:Nivel, areaDeFormacao:string}){
         this._id = parameters.id;
         this._nome = parameters.nome;
         this._nascimento = parameters.nascimento;
         this._genero = parameters.genero;
-        this._nivel_academico = parameters.nivel_academico;
-        this._area_de_formacao = parameters.area_de_formacao;
+        this._nivelAcademico = parameters.nivelAcademico;
+        this._areaDeFormacao = parameters.areaDeFormacao;
     }
 
     public set id(value: Id){
@@ -39,10 +39,10 @@ export class Teacher {
         this._genero= value;
     }
     public set nivel(value: Nivel ){
-        this._nivel_academico = value;
+        this._nivelAcademico = value;
     }
     public set area(value: string ){
-        this._area_de_formacao = value;
+        this._areaDeFormacao = value;
     }
 
     public get id() : Id {
@@ -59,10 +59,10 @@ export class Teacher {
         return this._genero;
     }
     public get nivel_academico() : Nivel {
-        return this._nivel_academico;
+        return this._nivelAcademico;
     }
     public get area_de_formacao() : string {
-        return this._area_de_formacao;
+        return this._areaDeFormacao;
     }
 
 }
