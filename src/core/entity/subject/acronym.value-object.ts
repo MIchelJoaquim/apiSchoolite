@@ -1,3 +1,6 @@
+const MIN_CHARACTERS = 2;
+const MAX_CHARACTERS = 10;
+
 export class Acronym {
     private _value: string;
 
@@ -6,13 +9,12 @@ export class Acronym {
     }
 
     static create(parameters: {value: string}): Acronym {
-        const _minCharacter = 2;
-        const _maxCharacter = 10;
-        if(parameters.value.length < _minCharacter ) 
-            throw new Error("A sigla deve ter pelo menos 2 caracteres");
         
-        if(parameters.value.length > _maxCharacter)
-            throw new Error("A sigla não deve ter mais de 10 caracteres");
+        if(parameters.value.length < MIN_CHARACTERS  ) 
+            throw new Error(`A sigla deve ter pelo menos ${MIN_CHARACTERS } caracteres`);
+        
+        if(parameters.value.length > MAX_CHARACTERS )
+            throw new Error(`A sigla não deve ter mais de ${MAX_CHARACTERS } caracteres`);
         
         const transformAcronymToUpperCase = parameters.value.toUpperCase();
         return new Acronym({value: transformAcronymToUpperCase});

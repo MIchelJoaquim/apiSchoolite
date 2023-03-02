@@ -2,7 +2,7 @@
 export type Nivel =  "Técnico Médio" | "Técnico Superior" | "Mestre";
 
 
-export default class NivelAcademico{
+export  class NivelAcademico{
     private _value : string;
 
     constructor(value:string){
