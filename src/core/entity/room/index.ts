@@ -47,18 +47,4 @@ e
 public get capacity() : number{
     return this._capacity;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

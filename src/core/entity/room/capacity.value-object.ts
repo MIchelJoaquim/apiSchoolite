@@ -7,10 +7,10 @@ export class Capacity{
 
     static create( parameters: {value: number}): Capacity {
         if(parameters.value < 1) 
-            throw new Error(" A Capacidade deve ser um valor positivo")
+            throw new Error("A Capacidade deve ser um valor positivo")
         
         if(parameters.value > 35)  
-            throw new Error(" A sala  nao deve ter mais de 35 aluno ")    
+            throw new Error("A sala  nao deve ter mais de 35 alunos ")    
 
             return new Capacity(parameters)
     }
