@@ -10,6 +10,7 @@ export class EditTeacher implements IEditTeacher {
     constructor(private editTeacherGateway:EditTeacherGateway){
 
     }
+    
     handle(id:Id,props:{
         nome:Name,
         nascimento:Date,

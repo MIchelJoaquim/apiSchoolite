@@ -4,6 +4,7 @@ import { Name } from './../../../core/entity/value-object/name.value-object';
 import { Id } from './../../../core/entity/value-object/id.value-object';
 
 
+
 export interface EditTeacherGateway{
     handle:(
         id:Id,props:{

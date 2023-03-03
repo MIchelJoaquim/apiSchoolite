@@ -4,6 +4,7 @@ import { Name } from './../../entity/value-object/name.value-object';
 import { Id } from './../../entity/value-object/id.value-object';
 
 
+
 export interface IEditTeacher{
     handle(id:Id,props:{
         nome:Name,
