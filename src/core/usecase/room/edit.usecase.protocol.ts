@@ -1,0 +1,16 @@
+import { Id } from "../../entity/value-object/id.value-object";
+import{Description} from "../../entity/value-object/description.value-object";
+import{Acronym} from "../../entity/value-object/acronym.value-object"; 
+import {Capacity}  from "../../entity/room/capacity.value-object";
+
+
+
+
+
+export interface IEditRoom {
+    handle:(schoolId: Id,props: {
+        description: Description,
+             acronym: Acronym, 
+             capacity: Capacity,
+    }) => Promise<void>
+}
