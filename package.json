@@ -1,0 +1,45 @@
+{
+  "name": "apischoolite",
+  "version": "1.0.0",
+  "description": "Api for a lite managent school system",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scorpion-devv/apiSchoolite.git"
+  },
+  "keywords": [
+    "api",
+    "school",
+    "lite"
+  ],
+  "author": "Scorpion Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scorpion-devv/apiSchoolite/issues"
+  },
+  "homepage": "https://github.com/scorpion-devv/apiSchoolite#readme",
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
