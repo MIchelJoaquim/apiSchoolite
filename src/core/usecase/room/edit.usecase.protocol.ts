@@ -8,9 +8,10 @@ import {Capacity}  from "../../entity/room/capacity.value-object";
 
 
 export interface IEditRoom {
-    handle:(schoolId: Id,props: {
+    handle:(id: Id,props: {
         description: Description,
              acronym: Acronym, 
              capacity: Capacity,
+             schoolId:Id,
     }) => Promise<void>
 }

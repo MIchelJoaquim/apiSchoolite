@@ -2,10 +2,11 @@ import { Capacity } from "../../../core/entity/room/capacity.value-object";
 import { Acronym } from "../../../core/entity/value-object/acronym.value-object";
 import { Description } from "../../../core/entity/value-object/description.value-object";
 import { Id } from "../../../core/entity/value-object/id.value-object";
+import { IEditRoom } from "../../../core/usecase/room/edit.usecase.protocol";
 import { IEditRoomGateway } from "../../getway/room/edit.gateway.protocol";
 
 
-export class IEditRoom implements IEditRoom {
+export class EditRoom implements IEditRoom {
     constructor(private editRoomGateway:IEditRoomGateway){
 
     }
