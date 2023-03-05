@@ -1,5 +1,5 @@
 import { Room } from "../../../core/entity/room";
 
-export interface ListRoomGateway {
+export interface IListRoomGateway {
   handle:() => Promise<Room[]>
 }
