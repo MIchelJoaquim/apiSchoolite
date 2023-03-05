@@ -1,3 +1,4 @@
+import { Id } from './../../../core/entity/value-object/id.value-object';
 import { Acronym } from './../../../core/entity/subject/acronym.value-object';
 import { Description } from './../../../core/entity/value-object/description.value-object';
 import { IEditSubjectGateway } from './../../getway/subject/edit.gateway.protocol';
@@ -9,7 +10,7 @@ export class EditSubject implements IEditSubject {
 
     }
 
-    handle(parameters: { description: Description; acronym: Acronym; }) : Promise<void>{
-        return this.editSubjectgatway.handle(parameters)
+    handle(id:Id,  props: { description: Description; acronym: Acronym; }) : Promise<void>{
+        return this.editSubjectgatway.handle(id, props)
     }
 }
