@@ -5,6 +5,6 @@ import { Name } from './../../../core/entity/value-object/name.value-object';
 import { Id } from './../../../core/entity/value-object/id.value-object';
 
 
-export interface ListTeacherGateway {
+export interface IListTeacherGateway {
     handle:() => Promise<Teacher[]>
 }
