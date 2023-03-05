@@ -23,28 +23,29 @@ export class Turma {
   public set id(value: Id) {
     this._id = value;
   }
-  public set description(value: Description) {
-    this._description = value;
-  }
 
-  public set course(value: string) {
-    this._course = value;
-  }
-  public set acronym(value: string) {
-    this._acronym = value;
-  }
-
-  //Gets
   public get id(): Id {
     return this._id;
+  }
+
+  public set description(value: Description) {
+    this._description = value;
   }
 
   public get description(): Description {
     return this._description;
   }
 
+  public set course(value: string) {
+    this._course = value;
+  }
+
   public get course(): string {
     return this._course;
+  }
+
+  public set acronym(value: string) {
+    this._acronym = value;
   }
 
   public get acronym(): string {

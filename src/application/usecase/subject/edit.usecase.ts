@@ -1,8 +1,8 @@
-import { Id } from './../../../core/entity/value-object/id.value-object';
-import { Description } from './../../../core/entity/value-object/description.value-object';
-import { IEditSubjectGateway } from './../../getway/subject/edit.gateway.protocol';
-import { IEditSubject } from './../../../core/usecase/subject/edit.usecase.protocol';
 import { Acronym } from '../../../core/entity/value-object/acronym.value-object';
+import { Description } from './../../../core/entity/value-object/description.value-object';
+import { IEditSubject } from './../../../core/usecase/subject/edit.usecase.protocol';
+import { IEditSubjectGateway } from './../../getway/subject/edit.gateway.protocol';
+import { Id } from './../../../core/entity/value-object/id.value-object';
 
 export class EditSubject implements IEditSubject {
   constructor(private editSubjectgatway: IEditSubjectGateway) {}

@@ -29,20 +29,20 @@ export class Subject {
     this._id = value;
   }
 
-  public set description(value: Description) {
-    this._description = value;
-  }
-
-  public set sigla(value: Acronym) {
-    this._acronym = value;
-  }
-
   public get id(): Id {
     return this._id;
   }
 
+  public set description(value: Description) {
+    this._description = value;
+  }
+
   public get description(): Description {
     return this._description;
+  }
+
+  public set acronym(value: Acronym) {
+    this._acronym = value;
   }
 
   public get acronym(): Acronym {

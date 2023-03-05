@@ -1,8 +1,5 @@
-import { Subject } from "../../../core/entity/subject";
+import { Subject } from '../../../core/entity/subject';
 
-
-export interface IListSubjectGateway{
-
-    handle:()=> Promise<Subject[]>
-    
-}
+export type IListSubjectGateway = {
+  handle: () => Promise<Subject[]>;
+};

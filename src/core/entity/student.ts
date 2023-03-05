@@ -8,19 +8,19 @@ export enum StudentField {
   Genre = 'genre',
 }
 
-interface IStudentProps {
+type IStudentProps = {
   id: string | number;
   name: Name;
   birthDate: Date;
   genre: Genre;
-}
+};
 
-interface IStudentDTO {
+type IStudentDTO = {
   id: string | number;
   name: string;
   birthDate: string;
   genre: string;
-}
+};
 
 export default class Student {
   private _id: string | number;
@@ -37,9 +37,9 @@ export default class Student {
 
   static create(props: IStudentDTO): Student {
     return new Student({
-      id: props.id,
       birthDate: new Date(props.birthDate),
       genre: Genre.create(props.genre as IGenre),
+      id: props.id,
       name: Name.create(props.name),
     });
   }

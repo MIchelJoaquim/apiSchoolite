@@ -1,9 +1,9 @@
 import Student, { StudentField } from '../../../core/entity/student';
 
-export interface IStudentDTO {
+export type IStudentDTO = {
   [StudentField.BirthDate]: Date;
-}
+};
 
-export interface ICreateStudent {
-  handle: (student: IStudentDTO) => Promise<void>;
-}
+export type ICreateStudent = {
+  handle: (student: IStudentDTO) => Promise<Student>;
+};

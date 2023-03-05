@@ -1,6 +1,5 @@
-import { Room } from "../../entity/room";
+import { Room } from '../../entity/room';
 
-
-export interface IListRoom{
-  handle:() => Promise<Room[]>
-}
+export type IListRoom = {
+  handle: () => Promise<Room[]>;
+};
