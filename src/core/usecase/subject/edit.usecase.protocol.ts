@@ -1,5 +1,5 @@
 import { Id } from './../../entity/value-object/id.value-object';
-import { Acronym } from './../../entity/subject/acronym.value-object';
+import { Acronym } from './../../entity/value-object/acronym.value-object';
 import { Description } from './../../entity/value-object/description.value-object';
 
 

@@ -1,3 +1,4 @@
+import { Acronym } from './value-object/acronym.value-object';
 import { Description } from './value-object/description.value-object';
 import { Id } from './value-object/id.value-object';
 
@@ -5,13 +6,13 @@ export class Turma {
   private _id: Id;
   private _description: Description;
   private _course: string;
-  private _acronym: string;
+  private _acronym: Acronym;
 
   constructor(parameters: {
     id: Id;
     description: Description;
     course: string;
-    acronym: string;
+    acronym: Acronym;
   }) {
     this._id = parameters.id;
     this._description = parameters.description;
@@ -30,7 +31,7 @@ export class Turma {
   public set course(value: string) {
     this._course = value;
   }
-  public set acronym(value: string) {
+  public set acronym(value: Acronym) {
     this._acronym = value;
   }
 
@@ -47,7 +48,7 @@ export class Turma {
     return this._course;
   }
 
-  public get acronym(): string {
+  public get acronym(): Acronym {
     return this._acronym;
   }
 }
