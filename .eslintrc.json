@@ -20,6 +20,15 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/consistent-type-definitions": ["error", "type"]
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "no-unused-vars": "error",
+    "camelcase": "error",
+    "class-methods-use-this": "warn",
+    "consistent-return": "error",
+    "constructor-super": "error",
+    "default-case": "error",
+    "max-depth": [3, "error"],
+    "max-lines": [10, "error"],
+    "max-params": [10, "error"]
   }
 }
