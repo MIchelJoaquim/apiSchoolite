@@ -1,3 +1,4 @@
+import { Acronym } from '../../../core/entity/value-object/acronym.value-object';
 import { Description } from './../../../core/entity/value-object/description.value-object';
 import { Id } from './../../../core/entity/value-object/id.value-object';
 
@@ -7,7 +8,7 @@ export interface EditTurmaGateway{
         id:Id,props:{
             course: string,
             description: Description,
-            acronym: string
+            acronym: Acronym
         }
-    )=> Promise<void>
+    )=> Promise<void>;
 }
