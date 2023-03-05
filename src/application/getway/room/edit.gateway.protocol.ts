@@ -4,9 +4,10 @@ import { Description } from "../../../core/entity/value-object/description.value
 import { Id } from "../../../core/entity/value-object/id.value-object";
 
 export interface IEditRoomGateway{
-    handle:(schoolId: Id,props: {
+    handle:(id: Id,props: {
         description: Description,
              acronym: Acronym, 
              capacity: Capacity,
+             schoolId:Id,
     }) => Promise<void>
 }
