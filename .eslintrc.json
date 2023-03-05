@@ -29,6 +29,13 @@
     "default-case": "error",
     "max-depth": [3, "error"],
     "max-lines": [10, "error"],
-    "max-params": [10, "error"]
+    "max-params": [10, "error"],
+    "sort-vars": "error",
+    "sort-imports": "error",
+    "sort-keys": "error",
+    "require-await": "error",
+    "prefer-const": "error",
+    "no-useless-return": "error",
+    "no-console": "warn"
   }
 }
