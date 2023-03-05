@@ -6,5 +6,9 @@ import { Id } from "../../entity/value-object/id.value-object";
 
 
 export interface ICreateRoom {
-    handle:(parameters: {description: Description, acronym: Acronym, capacity: number, schoolId: Id }) => Promise<void>;
+    handle:(parameters: {
+        description: Description,
+             acronym: Acronym, 
+             capacity: number, 
+             schoolId: Id }) => Promise<void>;
 }
