@@ -1,42 +1,40 @@
-import { Acronym } from '../value-object/acronym.value-object';
-import { Description } from '../value-object/description.value-object';
-import { Id } from '../value-object/id.value-object';
+import { Description } from './value-object/description.value-object';
+import { Id } from './value-object/id.value-object';
 
-export class Subject {
+export class Turma {
   private _id: Id;
   private _description: Description;
-  private _acronym: Acronym;
+  private _course: string;
+  private _acronym: string;
 
-  private constructor(parameters: {
+  constructor(parameters: {
     id: Id;
     description: Description;
-    acronym: Acronym;
+    course: string;
+    acronym: string;
   }) {
     this._id = parameters.id;
     this._description = parameters.description;
+    this._course = parameters.course;
     this._acronym = parameters.acronym;
   }
 
-  static create(parameters: {
-    id: Id;
-    description: Description;
-    acronym: Acronym;
-  }): Subject {
-    return new Subject(parameters);
-  }
-
+  //Sets
   public set id(value: Id) {
     this._id = value;
   }
-
   public set description(value: Description) {
     this._description = value;
   }
 
-  public set sigla(value: Acronym) {
+  public set course(value: string) {
+    this._course = value;
+  }
+  public set acronym(value: string) {
     this._acronym = value;
   }
 
+  //Gets
   public get id(): Id {
     return this._id;
   }
@@ -45,7 +43,11 @@ export class Subject {
     return this._description;
   }
 
-  public get acronym(): Acronym {
+  public get course(): string {
+    return this._course;
+  }
+
+  public get acronym(): string {
     return this._acronym;
   }
 }
