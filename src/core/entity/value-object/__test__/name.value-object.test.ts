@@ -1,7 +1,7 @@
 describe('TESTANDO SE O NOME É UMA STRING VAZIA', () => {
     it('Step 1', () => {
         const name = ' ';
-        expect(name).toBe(' ');
+        expect(name).not.toBe('DEV');
     });
 });
 
