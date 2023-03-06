@@ -9,5 +9,5 @@ describe('TESTANDO SE O NOME POSSUI PELO MENOS 3 LETRAS', () => {
     it('Step 2', () => {
         const name = ('ABC').trim().length;
         expect(name).toBeLessThanOrEqual(3);
-    });
+    })
 });
