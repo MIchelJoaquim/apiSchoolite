@@ -29,7 +29,7 @@ it('Must not create a name with less than 3 letters', () => {
   const nameValue = 'SCD';
   const name = Sut(nameValue);
 
-  expect(name.value).toEqual(nameValue);
+  expect(name.value).toBe(nameValue);
 }); 
 
 });
