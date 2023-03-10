@@ -8,7 +8,7 @@ describe('Id value object',()=>{
     return Id.create({ value });
   };
 
-  it('Should create a new Id', ()=>{
+  it('Should create a new Id', ()=> {
       const id = makeSut('1');
       expect(id).toBeInstanceOf(Id);
   });
@@ -34,6 +34,6 @@ describe('Id value object',()=>{
       const id = makeSut(idValue);
 
       expect(id.value).toBe(idValue);
-  })
+  });
 
 });
