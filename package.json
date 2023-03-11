@@ -13,8 +13,7 @@
     "build": "rimraf ./build && tsc",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "prepare": "husky install",
-    "test:silent":"jest --watchAll --silent --noStackTrace"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
