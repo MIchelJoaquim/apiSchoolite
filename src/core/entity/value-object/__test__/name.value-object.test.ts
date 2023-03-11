@@ -1,9 +1,9 @@
-import { Name } from '../name.value-object'
+import { Name } from '../name.value-object';
 
 describe('Name value object.', () => {
   const Sut = (value:string) => {
     return Name.create(value);
-  }
+  };
 
   it('Must not create an empty name', () => {
     expect(()=> Sut(' ')).toThrowError('O Nome não pode ser uma string vazia')
