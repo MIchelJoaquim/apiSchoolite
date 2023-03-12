@@ -29,30 +29,16 @@ export class Room {
     return new Room(parameters);
   }
 
-  public set id(value: Id) {
-    this._id = value;
-  }
-
-  public set description(value: Description) {
-    this._description = value;
-  }
-
   public get description(): Description {
     return this._description;
   }
-
-  public set acronym(value: Acronym) {
-    this._acronym = value;
+  public get id(): Id {
+    return this._id;
   }
 
   public get acronym(): Acronym {
     return this._acronym;
   }
-
-  public set capacity(value: number) {
-    this._capacity = value;
-  }
-
   public get capacity(): number {
     return this._capacity;
   }
