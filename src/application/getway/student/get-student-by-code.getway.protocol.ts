@@ -1,5 +1,5 @@
-import Student from "../../../core/entity/student";
+import Student from '../../../core/entity/student';
 
-export interface IgetStudentByCode {
-    handle: (code: string)=>Promise<Student>;
-}
+export type IgetStudentByCode = {
+  handle: (code: string) => Promise<Student>;
+};
