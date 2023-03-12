@@ -1,4 +1,4 @@
-export type IGenre = 'M' | 'F' | 'Tecnico medio';
+export type IGenre = 'M' | 'F';
 
 export default class Genre {
   private _value: string;
