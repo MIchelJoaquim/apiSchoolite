@@ -28,6 +28,7 @@ export const errorResponse = (
 
 export const makeResponse = (
   res: Response,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   dataResponse: any,
   msg?: string,
   status: number = HTTP.SUCCESS
