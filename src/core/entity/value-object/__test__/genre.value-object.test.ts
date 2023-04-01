@@ -18,11 +18,9 @@ describe('genre value object', () => {
   });
 
   it('Should return a rigth value', () => {
-    const genreMale = 'M';
-    const genreFemale = 'F';
-    const genreM = makeSut(genreMale);
-    const genreF = makeSut(genreFemale);
-    expect(genreM.value).toBe(genreMale);
-    expect(genreF.value).toBe(genreFemale);
+    const genreMale = makeSut('M');
+    const genreFemale = makeSut('F');
+    expect(genreMale.value).toBe('M');
+    expect(genreFemale.value).toBe('F');
   });
 });
