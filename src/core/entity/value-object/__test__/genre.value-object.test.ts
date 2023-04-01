@@ -12,6 +12,7 @@ describe('genre value object', () => {
   });
 
   it('Should not create a Invalid genre ', () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(() => makeSut('a' as any)).toThrowError('Invalid Genre value');
   });
 
