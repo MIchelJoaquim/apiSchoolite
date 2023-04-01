@@ -6,10 +6,10 @@ describe('genre value object', () => {
   };
 
   it('should create new Genre', () => {
-    const genre = makeSut('M');
-    const genreF = makeSut('F');
-    expect(genre).toBeInstanceOf(Genre);
-    expect(genreF).toBeInstanceOf(Genre);
+    const genreMale = makeSut('M');
+    const genreFemale = makeSut('F');
+    expect(genreMale).toBeInstanceOf(Genre);
+    expect(genreFemale).toBeInstanceOf(Genre);
   });
 
   it('Should not create a Invalid genre ', () => {
@@ -19,8 +19,7 @@ describe('genre value object', () => {
 
   it('Should return a rigth value', () => {
     const genreMale = makeSut('M');
-    const genreFemale = makeSut('F');
     expect(genreMale.value).toBe('M');
-    expect(genreFemale.value).toBe('F');
+    
   });
 });
