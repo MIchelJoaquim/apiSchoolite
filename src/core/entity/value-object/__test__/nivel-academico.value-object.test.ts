@@ -5,13 +5,13 @@ describe('nivel-cademico  valor objecto', () =>{
     return NivelAcademico.create(value as Nivel);
   };
 
-  it(' deve testar o nivel academico', () =>{
+  it(' deve criar o nivel academico', () =>{
     const Nivel = makeSut('Mestre');
     expect(Nivel).toBeInstanceOf(NivelAcademico);
 
   });
 
-  it('nao deve ter varios niveis', () => {
+  it('nao deve aceitar niveis invalidos', () => {
     expect(()=>makeSut('outro')).toThrowError('Invalid Level value');
   });
 
