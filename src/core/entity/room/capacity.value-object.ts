@@ -12,7 +12,7 @@ export class Capacity {
       throw new Error('A Capacidade deve ser um valor positivo');
 
     if (parameters.value > CAPACIDADE_MAXIMA)
-      throw new Error('A sala  nao deve ter mais de 35 alunos ');
+      throw new Error('A sala  nao deve ter mais de 35 alunos');
 
     return new Capacity(parameters);
   }
