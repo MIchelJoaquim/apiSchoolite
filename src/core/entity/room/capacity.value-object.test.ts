@@ -9,7 +9,7 @@ describe('Capacity value object.', () => {
     expect(()=> Sut(-8)).toThrowError('A Capacidade deve ser um valor positivo');
 });
 
-it('Must not create a name with less than 3 letters', () => {
+it('The value capacity can not to be greater than 35 ', () => {
   expect(()=> Sut(36)).toThrowError('A sala  nao deve ter mais de 35 alunos');
 });
 
