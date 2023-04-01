@@ -1,5 +1,4 @@
-import Genre from '../genre.value-object';
-import { IGenre } from './../genre.value-object';
+import Genre, { IGenre } from '../genre.value-object';
 
 describe('genre value object', () => {
   const makeSut = (value: IGenre) => {
@@ -8,7 +7,9 @@ describe('genre value object', () => {
 
   it('should create new Genre', () => {
     const genre = makeSut('M');
+    const genreF = makeSut('F');
     expect(genre).toBeInstanceOf(Genre);
+    expect(genreF).toBeInstanceOf(Genre);
   });
 
   it('Should not create a Invalid genre ', () => {
@@ -17,8 +18,11 @@ describe('genre value object', () => {
   });
 
   it('Should return a rigth value', () => {
-    const genrevalue = 'M';
-    const genre = makeSut(genrevalue);
-    expect(genre.value).toBe(genrevalue);
+    const genreMale = 'M';
+    const genreFemale = 'F';
+    const genreM = makeSut(genreMale);
+    const genreF = makeSut(genreFemale);
+    expect(genreM.value).toBe(genreMale);
+    expect(genreF.value).toBe(genreFemale);
   });
 });
