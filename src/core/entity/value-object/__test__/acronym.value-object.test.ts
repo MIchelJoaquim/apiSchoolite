@@ -5,15 +5,15 @@ describe('Acronym value object', () => {
     return Acronym.create({ value });
   };
 
-  it('Should create a new Acrony', () => {
-    const acronym = makeSut('ONU');
-    expect(acronym).toBeInstanceOf(Acronym);
-  });
+  it('Should creat  });
 
   it('Should not create a new Acronym with less than 2 characters', () => {
     try {
       makeSut('O');
     } catch (error: unknown) {
+e a new Acrony', () => {
+    const acronym = makeSut('ONU');
+    expect(acronym).toBeInstanceOf(Acronym);
       expect((error as Error).message).toBe(
         'A sigla deve ter pelo menos 2 caracteres'
       );
