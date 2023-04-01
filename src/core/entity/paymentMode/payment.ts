@@ -1,4 +1,4 @@
-export class Peyment{
+export class PeymentMode{
   private _value: string;
   
   private constructor(parameters: {
@@ -10,7 +10,7 @@ export class Peyment{
   static create(parameters:{
     value: string;
   }){
-    return new Peyment(parameters);
+    return new PeymentMode(parameters);
   }
   public get value(): string {
     return this._value;
