@@ -7,7 +7,7 @@ export class Payment {
     private _id: Id;
     private _value: number;
 
-    constructor(parameters: {
+    private constructor(parameters: {
         id: Id;
         date: Date;
         formPayment: PeymentMode;
@@ -18,7 +18,17 @@ export class Payment {
         this._formPayment = parameters.formPayment;
         this._value = parameters.value;
       }
-      public get date(): Date {
+
+      static create(parameters: {
+        id: Id;
+        date: Date;
+        formPayment: PeymentMode;
+        value: number;
+      }): Payment {
+        return new Payment(parameters);
+      }
+
+    public get date(): Date {
         return this._date;
       }
       public get formPayment(): PeymentMode {
@@ -29,5 +39,5 @@ export class Payment {
       }
       public get value(): number{
         return this._value;
-      }
+    }
 }
