@@ -25,24 +25,12 @@ export class Subject {
     return new Subject(parameters);
   }
 
-  public set id(value: Id) {
-    this._id = value;
-  }
-
   public get id(): Id {
     return this._id;
   }
 
-  public set description(value: Description) {
-    this._description = value;
-  }
-
   public get description(): Description {
     return this._description;
-  }
-
-  public set acronym(value: Acronym) {
-    this._acronym = value;
   }
 
   public get acronym(): Acronym {
