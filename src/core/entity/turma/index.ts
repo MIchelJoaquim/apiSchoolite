@@ -1,6 +1,6 @@
-import { Acronym } from './value-object/acronym.value-object';
-import { Description } from './value-object/description.value-object';
-import { Id } from './value-object/id.value-object';
+import { Acronym } from '../value-object/acronym.value-object';
+import { Description } from '../value-object/description.value-object';
+import { Id } from '../value-object/id.value-object';
 
 export class Turma {
   private _id: Id;
@@ -28,24 +28,12 @@ export class Turma {
     return this._id;
   }
 
-  public set acronym(value: Acronym) {
-    this._acronym = value;
-  }
-
   public get acronym(): Acronym {
     return this._acronym;
   }
-
-  public set description(value: Description) {
-    this._description = value;
-  }
-
+  
   public get description(): Description {
     return this._description;
-  }
-
-  public set course(value: string) {
-    this._course = value;
   }
 
   public get course(): string {
