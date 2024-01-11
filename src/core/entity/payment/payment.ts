@@ -32,6 +32,7 @@ export class Payment {
         return this._date;
       }
       public get formPayment(): PeymentMode {
+
         return this._formPayment;
       }
       public get id(): Id{
@@ -39,5 +40,6 @@ export class Payment {
       }
       public get value(): number{
         return this._value;
+
     }
 }
