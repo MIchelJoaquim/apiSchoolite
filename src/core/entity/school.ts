@@ -1,11 +1,9 @@
 export enum SchoolField {
-    Name = "name", 
-    Number = "number"
+  Name = 'name',
+  Number = 'number',
 }
 
 export default class SchoolFied {
-    [SchoolField.Name]: string;
-    [SchoolField.Number]: number;
-
-    constructor(){}
+  //   [SchoolField.Name]: string;
+  //   [SchoolField.Number]: number;
 }
