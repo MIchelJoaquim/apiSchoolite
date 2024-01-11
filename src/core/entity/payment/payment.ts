@@ -1,15 +1,16 @@
 import { Id } from '../value-object/id.value-object';
+import { PeymentMode } from '../paymentMode/payment';
 
 export class Payment {
     private _date: Date;
-    private _formPayment: string;
+    private _formPayment: PeymentMode;
     private _id: Id;
     private _value: number;
 
-    constructor(parameters: {
+    private constructor(parameters: {
         id: Id;
         date: Date;
-        formPayment: string;
+        formPayment: PeymentMode;
         value: number;
       }) {
         this._id = parameters.id;
@@ -17,10 +18,21 @@ export class Payment {
         this._formPayment = parameters.formPayment;
         this._value = parameters.value;
       }
-      public get date(): Date {
+
+      static create(parameters: {
+        id: Id;
+        date: Date;
+        formPayment: PeymentMode;
+        value: number;
+      }): Payment {
+        return new Payment(parameters);
+      }
+
+    public get date(): Date {
         return this._date;
       }
-      public get formPayment(): string {
+      public get formPayment(): PeymentMode {
+
         return this._formPayment;
       }
       public get id(): Id{
@@ -28,5 +40,6 @@ export class Payment {
       }
       public get value(): number{
         return this._value;
-      }
+
+    }
 }
