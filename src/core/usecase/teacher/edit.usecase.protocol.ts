@@ -3,6 +3,7 @@ import { Id } from '../../entity/value-object/id.value-object';
 import { Name } from './../../entity/value-object/name.value-object';
 import { Nivel } from './../../entity/value-object/nivel-academico';
 
+
 export type IEditTeacher = {
   handle(
     id: Id,
