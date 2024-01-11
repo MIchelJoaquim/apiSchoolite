@@ -9,9 +9,7 @@ export class Id {
     if (typeof parameters.value === 'number' && parameters.value < 0)
       throw new Error('O id não deve ser negativo');
 
-    if (typeof parameters.value === 'string' && parameters.value.length > 3)
-      throw new Error('O id deve ser composto por mais de 3 caracteres');
-
+   
     return new Id(parameters);
   }
 
